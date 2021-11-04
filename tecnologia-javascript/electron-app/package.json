@@ -1,0 +1,14 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "Electron Demo App",
+  "main": "main.js",
+  "author": "Marcelo Olimpio",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^15.3.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}
