@@ -11,9 +11,9 @@ import StarIcon from '@mui/icons-material/StarBorder';
 import Typography from '@mui/material/Typography';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
-import Copyright from './Copyright';
-import NavBar from './NavBar';
-import { useNavigate } from 'react-router-dom';
+import Copyright from '../components/copyright';
+import NavBar from '../components/navbar';
+import { useRouter } from 'next/router';
 
 const courses = [
   {
@@ -55,12 +55,12 @@ const courses = [
   },
 ];
 
-export function Courses() {
-  const navigate = useNavigate();
+export default function Dashboard() {
+  const router = useRouter();
 
   const checkout = (course) => {
     localStorage.setItem('course', JSON.stringify(course));
-    navigate('/checkout');
+    router.push('/checkout');
   }
 
   return (

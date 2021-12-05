@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
 import Copyright from './Copyright';
-import NavBar from './NavBar';
+import NavBar from '../components/navbar';
 
 const steps = ['Detalhes do pagamento', 'Revisar dados do pedido'];
 

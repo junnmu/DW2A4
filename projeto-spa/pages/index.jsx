@@ -9,18 +9,18 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/router';
 
-import Copyright from './Copyright';
+import Copyright from '../components/copyright';
 
 export default function Login() {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     if (data.get('password') === 'Senha123456') {
-      navigate('dashboard'); 
+      router.push('dashboard'); 
     }
   };
 
