@@ -18,10 +18,7 @@ export default function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    if (data.get('password') === 'Senha123456') {
-      router.push('dashboard'); 
-    }
+    router.push('dashboard');
   };
 
   return (
