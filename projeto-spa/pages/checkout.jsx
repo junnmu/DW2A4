@@ -8,9 +8,9 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import PaymentForm from './PaymentForm';
-import Review from './Review';
-import Copyright from './Copyright';
+import PaymentForm from '../components/paymentform';
+import Review from '../components/review';
+import Copyright from '../components/copyright';
 import NavBar from '../components/navbar';
 
 const steps = ['Detalhes do pagamento', 'Revisar dados do pedido'];
